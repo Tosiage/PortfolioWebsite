@@ -87,6 +87,36 @@ nav ul li {
   margin-top: -7rem;
 }
 
+
+@keyframes animateWave1 {
+  0% {
+    transform: scale(1,0);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
+#w1 {
+ 
+  display: block;
+  transform-origin: top;
+  animation: animateWave1 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+@keyframes animateWave2 {
+  0% {
+    transform: scale(1,0);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
+#w2 {
+  margin-top: -25rem;
+  display: block;
+  transform-origin: top;
+  animation: animateWave2 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
 .burger-menu {
   color: var(--primary-color);
   font-size: 2rem;
